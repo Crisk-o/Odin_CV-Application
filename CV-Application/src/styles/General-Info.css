@@ -1,8 +1,9 @@
 /* COLOR PALETTE:
- 	#FBE0C3 - LIGHT-PEACH
+ 	#FBE0C3 - LIGHT PEACH
 	#FFBB98 - PEACH/SUNSET
 	#7D8E95 - LIGHT BLUE
 	#344648 - NAVYBLUEISH
+    #2d3142 - JET BLACK
 */
 
 label{
@@ -86,7 +87,7 @@ body{
     height: fit-content;
     text-align: center;
     width: 100%;
-    color: #344648;
+    color: #2d3142;
 }
 .general-info{
     display: flex;
@@ -107,7 +108,8 @@ body{
 }
 .info-name{
     align-items: center;
-    color: #344648;
+    color: #2d3142;
+    font-size: 48px;
     margin: 0;
     padding-bottom: 15px;
 }

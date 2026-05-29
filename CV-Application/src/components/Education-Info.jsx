@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Education-Info.css"
 function Education_Info(){
-    const [info, setEducationInfo] = useState({schoolName: "University of Whatever",major: "Computer Science", gradDate: "01/01/2001"});
+    const [info, setEducationInfo] = useState({schoolName: "University of Whatever",major: "Computer Science", gradDate: "01/2001"});
     const [isHidden, setHidden] = useState(false);
     
     const handleInputChange = (e) => {
@@ -22,16 +22,16 @@ function Education_Info(){
             <div className={`edu-info-form ${isHidden ? 'hidden' : ''}`}>
                 <form onSubmit={switchMode}>
                     <div className={`${isHidden ? 'hidden' : ''}`}>
-                        <label>School Name:</label>
-                        <input type="text" name="name" value={info.schoolName} onChange={handleInputChange}/>   
+                        <label for="schoolName">School Name:</label>
+                        <input type="text" name="schoolName" value={info.schoolName} onChange={handleInputChange}/>   
                     </div>
                     <div className={`${isHidden ? 'hidden' : ''}`}>
-                        <label>Degree Earned:</label>
-                        <input type="text" name="lastName" value={info.major} onChange={handleInputChange}/>
+                        <label for="major">Degree Earned:</label>
+                        <input type="text" name="major" value={info.major} onChange={handleInputChange}/>
                     </div>
                     <div className={`${isHidden ? 'hidden' : ''}`}>
-                        <label>Graduation Date:</label>
-                        <input type="date" name="date" value={info.gradDate} onChange={handleInputChange} placeholder="05/2026"/>
+                        <label for="gradDate">Graduation Date:</label>
+                        <input type="text" name="gradDate"value={info.gradDate} onChange={handleInputChange} placeholder="05/2026"/>
                     </div>
                     <div className={`${isHidden ? 'hidden' : ''}`}>
                         <button type="submit">Submit</button>
@@ -51,7 +51,6 @@ function Education_Info(){
                     <div class="info-school-date">
                         <h3>• {info.gradDate}</h3>
                     </div>
-
                 </div>
             </div>
         </div>

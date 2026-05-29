@@ -1,0 +1,51 @@
+.exp-info-form{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: #fcecda;
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.308);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+.exp-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #2d3142;
+    padding: 15px;
+}
+.exp-info-display{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: start;
+    padding-left: 25px;
+    border-bottom: 4px solid #FFBB98;
+}
+.info-job{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    color: #2d3142;
+}
+.info-job > h3{
+    margin: 0;
+}
+.info-job > h4{
+    margin: 0;
+}
+.info-job-descr{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 25px;
+    border-bottom: 1px solid #2d3142;
+
+
+}.info-job-descr > h4{
+    margin: 0;
+}
