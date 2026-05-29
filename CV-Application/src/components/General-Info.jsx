@@ -3,7 +3,7 @@ import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Gener
 import phoneIcon from "/Users/crisk/repos/Odin_CV-Application/CV-Application/src/assets/lucide--phone.svg"
 import mailIcon from "/Users/crisk/repos/Odin_CV-Application/CV-Application/src/assets/lucide--mail.svg"
 function General_Info(){
-    const[info, setGeneralInfo] = useState({name: "", lastName: "", email: "", phone: ""});
+    const[info, setGeneralInfo] = useState({name: "First", lastName: "Last", email: "me@example.com", phone: "123-456-7890"});
     const [isHidden, setHidden] = useState(false);
 
     const handleInputChange = (e) => {
@@ -19,7 +19,7 @@ function General_Info(){
     return (
         <>
         <div class="general-info-container">
-            <div className={`general-info-inputs ${isHidden ? 'hidden' : ''}`}>
+            <div className={`general-info-form ${isHidden ? 'hidden' : ''}`}>
                 <form onSubmit={switchMode}>
                     <div className={`${isHidden ? 'hidden' : ''}`}>
                         <label>First Name:</label>
@@ -45,14 +45,11 @@ function General_Info(){
             </div>
             <div className={`general-info`}>
                 <div class="section-title-container">
-                    <button onClick={switchMode}>Make Changes</button>
-                    <h1>General Info:</h1>
+                    <button class="edit-btn" onClick={switchMode}>Edit Section</button>
+                    <h1>About:</h1>
                 </div>
+                <h1 class="info-name">{info.name} {info.lastName}</h1>
                 <div class="info-display">
-                    <div>
-                        <h2>{info.name} {info.lastName}</h2>
-
-                    </div>
                     <div class="info-phone">
                         <img src={mailIcon}></img>
                         <h3>{info.email}</h3>
@@ -62,7 +59,6 @@ function General_Info(){
                         <h3>{info.phone}</h3>
                     </div>
                 </div>
-
             </div>
         </div>
         </>

@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}
+.edit-btn{
+  display: block;
+  width: auto;
+  height: fit-content;
+}
+.education-section-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background: #7D8E95;
+}
+.edu-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: whitesmoke;
+    padding: 15px;
+}
+.edu-info-form{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: #FBE0C3;
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+.edu-info-display{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 4px solid #FFBB98;
+  gap: 25px;
+}
+.info-school{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: fit-content;
+}
+.info-school > h3 {
+  margin: 0;
+  padding: 0;
+}
+.info-school-date{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.info-school-date > h3{
+  margin: 0;
+  padding: 0;
+}
