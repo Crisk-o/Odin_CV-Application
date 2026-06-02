@@ -59,6 +59,7 @@ body{
   background-color: #FBE0C3;
   padding: 10px;
 }
+
 @media print {
   .no-print {
     display: none !important;
@@ -92,14 +93,19 @@ body{
     text-align: center;
     width: 100%;
     color: #2d3142;
+    
 }
 .general-info{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     width: 100%;
     color: whitesmoke;
-    background: #7D8E95;
     padding: 15px;
+    background-color: #7D8E95;
+    border-bottom: 4px solid #FFBB98;
+
 }
 .info-display{
     display: flex;
@@ -107,8 +113,6 @@ body{
     justify-content: center;
     width: 100%;
     gap: 100px;
-    border-bottom: 4px solid #FFBB98;
-
 }
 .info-name{
     align-items: center;

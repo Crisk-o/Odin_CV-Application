@@ -1,9 +1,9 @@
 import { useState } from "react"
 import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Experience-Info.css"
 function Experience_Info(){
-    const [job1, setJob1] = useState({company: "Company A", position: "Job A", duties: {one: "First duty", two: "Secnd things...", three: "third duty"}, datesEmployed: "2018 - 2020"});
-    const [job2, setJob2] = useState({company: "Company B", position: "Job B", duties: {one: "First duty", two: "Second things...", three: "third duty"}, datesEmployed: "2020 - 2024"});
-    const [job3, setJob3] = useState({company: "Company C", position: "Job C", duties: {one: "First duty", two: "Second things...", three: "third duty"}, datesEmployed: "2024 - Present"});
+    const [job1, setJob1] = useState({company: "Company A", position: "Job A", duties: {one: "Lorem ipsum dolor sit amet.", two: "Lorem ipsum dolor sit amet.", three: "Lorem ipsum dolor sit amet."}, datesEmployed: "2018 - 2020"});
+    const [job2, setJob2] = useState({company: "Company B", position: "Job B", duties: {one: "Lorem ipsum dolor sit amet.", two: "Lorem ipsum dolor sit amet.", three: "Lorem ipsum dolor sit amet."}, datesEmployed: "2020 - 2024"});
+    const [job3, setJob3] = useState({company: "Company C", position: "Job C", duties: {one: "Lorem ipsum dolor sit amet.", two: "Lorem ipsum dolor sit amet.", three: "Lorem ipsum dolor sit amet."}, datesEmployed: "2024 - Present"});
 
     const [activeDialog, setActiveDialog] = useState(null);
 
@@ -82,14 +82,14 @@ function Experience_Info(){
                             )}
                             <div class="info-job">
                                 <div>
-                                    <h3>• {job1.company}</h3>
+                                    <h4>• {job1.company}</h4>
                                 </div>
                                 <div>
-                                    <h3>{job1.datesEmployed}</h3>
+                                    <h4>{job1.datesEmployed}</h4>
                                 </div>
                             </div>
                             <div class="info-job-descr">
-                                <h3><em>{job1.position}</em></h3>
+                                <h4><em>{job1.position}</em></h4>
                                 <ul class="duties-list">
                                     <li>{job1.duties.one}</li>
                                     <li>{job1.duties.two}</li>
@@ -122,14 +122,14 @@ function Experience_Info(){
                             )}
                             <div class="info-job">
                                 <div>
-                                    <h3>• {job2.company}</h3>
+                                    <h4>• {job2.company}</h4>
                                 </div>
                                 <div>
-                                    <h3>{job2.datesEmployed}</h3>
+                                    <h4>{job2.datesEmployed}</h4>
                                 </div>
                             </div>
                             <div class="info-job-descr">
-                                <h3><em>{job2.position}</em></h3>
+                                <h4><em>{job2.position}</em></h4>
                                 <ul class="duties-list">
                                     <li>{job2.duties.one}</li>
                                     <li>{job2.duties.two}</li>
@@ -162,14 +162,14 @@ function Experience_Info(){
                             )}
                             <div class="info-job">
                                 <div>
-                                    <h3>• {job3.company}</h3>
+                                    <h4>• {job3.company}</h4>
                                 </div>
                                 <div>
-                                    <h3>{job3.datesEmployed}</h3>
+                                    <h4>{job3.datesEmployed}</h4>
                                 </div>
                             </div>
                             <div class="info-job-descr">
-                                <h3><em>{job3.position}</em></h3>
+                                <h4><em>{job3.position}</em></h4>
                                 <ul class="duties-list" >
                                     <li>{job3.duties.one}</li>
                                     <li>{job3.duties.two}</li>

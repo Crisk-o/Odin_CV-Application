@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Education-Info.css"
 function Education_Info(){
-    const [info, setEducationInfo] = useState({schoolName: "University of Whatever",major: "Bachelor of Science, Computer Science", gradDate: "01/2001"});
+    const [info, setEducationInfo] = useState({schoolName: "University of Whatever", schoolLocation: "Some City", major: "Bachelor of Science, Computer Science", gradDate: "01/2001"});
     const [isHidden, setHidden] = useState(false);
 
 
@@ -21,21 +21,15 @@ function Education_Info(){
         <div class='education-section-container'>
             <div className={`edu-info-form ${isHidden ? '' : 'hidden'}`}>
                 <form onSubmit={switchMode}>
-                    <div>
                         <label for="schoolName">School Name:</label>
                         <input type="text" name="schoolName" value={info.schoolName} onChange={handleInputChange}/>   
-                    </div>
-                    <div>
+                        <label>School Location:</label>
+                        <input type="text" name="schoolLocation" value={info.schoolLocation} onChange={handleInputChange}/>
                         <label for="major">Degree Earned:</label>
                         <input type="text" name="major" value={info.major} onChange={handleInputChange}/>
-                    </div>
-                    <div>
                         <label for="gradDate">Graduation Date:</label>
                         <input type="text" name="gradDate"value={info.gradDate} onChange={handleInputChange} placeholder="05/2026"/>
-                    </div>
-                    <div>
                         <button type="submit">Submit</button>
-                    </div>
                 </form>
             </div>
             <div class='edu-info'>
@@ -43,15 +37,15 @@ function Education_Info(){
                     <div>
                         <button class={`edit-btn no-print`}onClick={switchMode}>Edit Section</button>
                     </div>
-                    <h1>Education:</h1>
+                    <h2>Education:</h2>
                 </div>
                 <div class="edu-info-display">
                     <div class="info-school">
-                        <h3>• {info.schoolName}</h3>
-                        <h4>— <em>{info.major}</em></h4>
+                        <p>• <strong>{info.schoolName}</strong>, {info.schoolLocation}</p>
+                        <h4 style={{color: "#40465e"}}>— <em>{info.major}</em></h4>
                     </div>
                     <div class="info-school-date">
-                        <h3>• {info.gradDate}</h3>
+                        <h4> {info.gradDate}</h4>
                     </div>
                 </div>
             </div>
