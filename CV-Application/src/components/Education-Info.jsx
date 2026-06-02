@@ -15,25 +15,24 @@ function Education_Info(){
         setHidden(!isHidden);
     }
 
-
     return (
     <>
         <div class='education-section-container'>
-            <div className={`edu-info-form ${isHidden ? 'hidden' : ''}`}>
+            <div className={`edu-info-form ${isHidden ? '' : 'hidden'}`}>
                 <form onSubmit={switchMode}>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label for="schoolName">School Name:</label>
                         <input type="text" name="schoolName" value={info.schoolName} onChange={handleInputChange}/>   
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label for="major">Degree Earned:</label>
                         <input type="text" name="major" value={info.major} onChange={handleInputChange}/>
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label for="gradDate">Graduation Date:</label>
                         <input type="text" name="gradDate"value={info.gradDate} onChange={handleInputChange} placeholder="05/2026"/>
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <button type="submit">Submit</button>
                     </div>
                 </form>

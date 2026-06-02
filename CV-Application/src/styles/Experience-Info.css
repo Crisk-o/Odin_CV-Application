@@ -1,6 +1,6 @@
 .exp-info-form{
     box-sizing: border-box;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
     width: 100%;
     justify-content: start;
     padding-left: 25px;
-    border-bottom: 4px solid #FFBB98;
+    /* border-bottom: 4px solid #FFBB98; */
 }
 .info-job{
     display: flex;
@@ -56,10 +56,18 @@
 }
 .form-modal{
     color: #2d3142;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: #FFBB98;
+    position: absolute;
+    top: 70%; bottom: 50%;
+
 }
 .job-form{
     display: flex;
     flex-direction: column;
-    
+    gap: 5px;
+}
+.list-input {
+    height: 25px;
+    width: auto;
+
 }

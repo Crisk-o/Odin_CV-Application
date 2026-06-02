@@ -19,26 +19,26 @@ function General_Info(){
     return (
         <>
         <div class="general-info-container">
-            <div className={`general-info-form ${isHidden ? 'hidden' : ''}`}>
+            <div className={`general-info-form ${isHidden ? '' : 'hidden'}`}>
                 <form onSubmit={switchMode}>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label>First Name:</label>
                         <input type="text" name="name" value={info.name} onChange={handleInputChange}/>   
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label>Last Name:</label>
                         <input type="text" name="lastName" value={info.lastName} onChange={handleInputChange}/>
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label>Email:</label>
                         <input type="email" name="email" value={info.email} onChange={handleInputChange} placeholder="example@email.com"/>
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <label>Phone Number:</label>
                         <input type="tel" name="phone" value={info.phone} onChange={handleInputChange}  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             placeholder="123-456-7890"/>
                     </div>
-                    <div className={`${isHidden ? 'hidden' : ''}`}>
+                    <div>
                         <button type="submit">Submit</button>
                     </div>
                 </form>
