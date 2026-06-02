@@ -1,6 +1,6 @@
 // A section to add your educational experience (school name, title of study and date of study)
 import { useState } from "react";
-import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Education-Info.css"
+import "../styles/Education-Info.css"
 function Education_Info(){
     const [info, setEducationInfo] = useState({schoolName: "University of Whatever", schoolLocation: "Some City", major: "Bachelor of Science, Computer Science", gradDate: "01/2001"});
     const [isHidden, setHidden] = useState(false);

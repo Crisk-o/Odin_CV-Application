@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Experience-Info.css"
+import "../styles/Experience-Info.css"
 function Experience_Info(){
     const [job1, setJob1] = useState({company: "Company A", position: "Job A", duties: {one: "Lorem ipsum dolor sit amet.", two: "Lorem ipsum dolor sit amet.", three: "Lorem ipsum dolor sit amet."}, datesEmployed: "2018 - 2020"});
     const [job2, setJob2] = useState({company: "Company B", position: "Job B", duties: {one: "Lorem ipsum dolor sit amet.", two: "Lorem ipsum dolor sit amet.", three: "Lorem ipsum dolor sit amet."}, datesEmployed: "2020 - 2024"});
