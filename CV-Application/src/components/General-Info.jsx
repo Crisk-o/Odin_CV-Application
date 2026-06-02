@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/General-Info.css"
-import phoneIcon from "/Users/crisk/repos/Odin_CV-Application/CV-Application/src/assets/lucide--phone.svg"
-import mailIcon from "/Users/crisk/repos/Odin_CV-Application/CV-Application/src/assets/lucide--mail.svg"
+import "Odin_CV-Application/CV-Application/src/styles/General-Info.css"
+import phoneIcon from "Odin_CV-Application/CV-Application/src/assets/lucide--phone.svg"
+import mailIcon from "Odin_CV-Application/CV-Application/src/assets/lucide--mail.svg"
 function General_Info(){
     const[info, setGeneralInfo] = useState({name: "First", lastName: "Last", email: "me@example.com", phone: "123-456-7890"});
     const [isHidden, setHidden] = useState(false);
