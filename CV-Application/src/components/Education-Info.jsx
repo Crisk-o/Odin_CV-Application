@@ -2,9 +2,10 @@
 import { useState } from "react";
 import "C:/Users/crisk/repos/Odin_CV-Application/CV-Application/src/styles/Education-Info.css"
 function Education_Info(){
-    const [info, setEducationInfo] = useState({schoolName: "University of Whatever",major: "Computer Science", gradDate: "01/2001"});
+    const [info, setEducationInfo] = useState({schoolName: "University of Whatever",major: "Bachelor of Science, Computer Science", gradDate: "01/2001"});
     const [isHidden, setHidden] = useState(false);
-    
+
+
     const handleInputChange = (e) => {
         const {name, value} = e.target
         setEducationInfo((prevInfo) => ({...prevInfo, [name]: value }) )
@@ -39,13 +40,15 @@ function Education_Info(){
             </div>
             <div class='edu-info'>
                 <div class="section-title-container">
-                    <button class="edit-btn"onClick={switchMode}>Edit Section</button>
+                    <div>
+                        <button class={`edit-btn no-print`}onClick={switchMode}>Edit Section</button>
+                    </div>
                     <h1>Education:</h1>
                 </div>
                 <div class="edu-info-display">
                     <div class="info-school">
                         <h3>• {info.schoolName}</h3>
-                        <h4>— <em>Bachelor's of Science, {info.major}</em></h4>
+                        <h4>— <em>{info.major}</em></h4>
                     </div>
                     <div class="info-school-date">
                         <h3>• {info.gradDate}</h3>

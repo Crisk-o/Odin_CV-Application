@@ -58,14 +58,18 @@ body{
   border: 1px solid black;
   background-color: #FBE0C3;
   padding: 10px;
-
+}
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
 .hidden {
     display: none;
 }
 .general-info-container{
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 .general-info-form{

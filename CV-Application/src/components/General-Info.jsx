@@ -45,7 +45,9 @@ function General_Info(){
             </div>
             <div className={`general-info`}>
                 <div class="section-title-container">
-                    <button class="edit-btn" onClick={switchMode}>Edit Section</button>
+                    <div>
+                        <button className={`edit-btn no-print` } onClick={switchMode}>Edit Section</button>
+                    </div>
                     <h1>About:</h1>
                 </div>
                 <h1 class="info-name">{info.name} {info.lastName}</h1>
